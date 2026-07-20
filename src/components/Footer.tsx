@@ -16,9 +16,6 @@ export default function Footer() {
           >
             Instagram
           </a>
-          <a href="/contact" className="transition hover:text-white">
-            Inquire
-          </a>
         </div>
       </div>
     </footer>
