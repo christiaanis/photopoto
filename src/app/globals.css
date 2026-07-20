@@ -21,3 +21,12 @@ body {
   background: #ffffff;
   color: #000000;
 }
+
+@keyframes kenburns {
+  from {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.12) translate3d(-1%, -1%, 0);
+  }
+}

@@ -1,14 +1,16 @@
-import Gallery from "@/components/Gallery";
+import EditorialGallery from "@/components/EditorialGallery";
 import Hero from "@/components/Hero";
+import Outro from "@/components/Outro";
 import { heroPhoto } from "@/lib/photos";
 
 export default function Home() {
   return (
     <div>
       <Hero photo={heroPhoto} />
-      <div className="mx-auto max-w-6xl px-6 py-20">
-        <Gallery />
+      <div className="py-20 sm:py-32">
+        <EditorialGallery />
       </div>
+      <Outro />
     </div>
   );
 }
