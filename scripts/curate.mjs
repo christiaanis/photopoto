@@ -53,17 +53,19 @@ let ci = 0;
 const tsLines = rest.map((r) => {
   const caption = captions[ci++ % captions.length];
   const featured = featuredSlugs.has(r.slug) ? ", featured: true" : "";
-  return `  { slug: "${r.slug}", alt: "${caption}", aspect: "${r.aspect}"${featured} },`;
+  const ratio = (r.w / r.h).toFixed(4);
+  return `  { slug: "${r.slug}", alt: "${caption}", aspect: "${r.aspect}", ratio: ${ratio}${featured} },`;
 });
 
 const ts = `export interface Photo {
   slug: string;
   alt: string;
   aspect: "portrait" | "landscape" | "square";
+  ratio: number;
   featured?: boolean;
 }
 
-export const heroPhoto: Photo = { slug: "${hero.slug}", alt: "Featured photograph", aspect: "landscape" };
+export const heroPhoto: Photo = { slug: "${hero.slug}", alt: "Featured photograph", aspect: "landscape", ratio: ${(hero.w / hero.h).toFixed(4)} };
 
 export const photos: Photo[] = [
 ${tsLines.join("\n")}
