@@ -25,7 +25,7 @@ export default function PhotoFrame({
     <button
       type="button"
       onClick={onClick}
-      className={`group block w-full bg-white p-2 shadow-[0_2px_20px_rgba(0,0,0,0.4)] transition-transform duration-300 hover:-translate-y-0.5 sm:p-2.5 ${
+      className={`group block w-full bg-white p-2.5 shadow-[0_4px_30px_rgba(0,0,0,0.45)] transition-transform duration-300 hover:-translate-y-1 sm:p-3 ${
         onClick ? "cursor-zoom-in" : "cursor-default"
       }`}
       aria-label={photo.alt}
