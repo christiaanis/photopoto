@@ -52,9 +52,6 @@ export default function PhotoFrame({
             <circle cx="12" cy="13" r="3.5" />
             <path d="M8 6l1.5-2h5L16 6" />
           </svg>
-          <span className="text-[11px] uppercase tracking-[0.2em] text-neutral-500">
-            {photo.category}
-          </span>
           <span className="text-xs text-neutral-600">{photo.slug}.jpg</span>
         </div>
       )}

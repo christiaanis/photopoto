@@ -83,12 +83,7 @@ export default function Lightbox({
             {photo.slug}.jpg
           </div>
         )}
-        <p className="text-center text-sm text-neutral-400">
-          {photo.alt} &mdash;{" "}
-          <span className="uppercase tracking-wider text-neutral-500">
-            {photo.category}
-          </span>
-        </p>
+        <p className="text-center text-sm text-neutral-400">{photo.alt}</p>
       </div>
 
       <button

@@ -6,7 +6,7 @@ export const metadata = {
   description: "Learn more about Chris and the story behind Chrispy Photos.",
 };
 
-const portrait = photos.find((p) => p.slug === "portrait-02")!;
+const portrait = photos.find((p) => p.aspect === "portrait") ?? photos[0];
 
 export default function AboutPage() {
   return (
