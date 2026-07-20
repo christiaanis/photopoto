@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+::selection {
+  background: #ffffff;
+  color: #000000;
+}
