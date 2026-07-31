@@ -1,25 +1,22 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 const INSTAGRAM_URL = "https://www.instagram.com/chrispyphotos___/";
 
 export default function Nav() {
   return (
-    <header className="absolute inset-x-0 top-0 z-40">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <Link href="/" aria-label="Chrispy Photos" className="text-white">
-          <svg width="24" height="24" viewBox="0 0 26 26" fill="none" aria-hidden="true">
-            <circle cx="13" cy="13" r="12" stroke="currentColor" strokeWidth="0.75" />
-            <circle cx="13" cy="13" r="3.4" fill="currentColor" fillOpacity="0.9" />
-          </svg>
+    <header className="border-b border-neutral-200 bg-[#faf9f6] py-10 sm:py-14">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-6">
+        <Link href="/" className="transition hover:opacity-70">
+          <Logo />
         </Link>
-
         <a
           href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm uppercase tracking-[0.15em] text-neutral-300 transition hover:text-white"
+          className="text-xs uppercase tracking-[0.25em] text-neutral-500 transition hover:text-neutral-900"
         >
-          Instagram
+          @chrispyphotos___
         </a>
       </div>
     </header>

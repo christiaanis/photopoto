@@ -7,6 +7,7 @@ import "./globals.css";
 const playfair = Playfair_Display({
   variable: "--font-serif",
   subsets: ["latin"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -17,12 +18,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Chrispy Photos | Photography Portfolio",
+  title: "Chris Burger | Photographer",
   description:
-    "Portrait, street, nature, and travel photography by Chris. View the portfolio and inquire about bookings.",
+    "Portrait, street, nature, and travel photography by Chris Burger (@chrispyphotos___).",
   openGraph: {
-    title: "Chrispy Photos | Photography Portfolio",
-    description: "Portrait, street, nature, and travel photography by Chris.",
+    title: "Chris Burger | Photographer",
+    description: "Portrait, street, nature, and travel photography by Chris Burger.",
     type: "website",
   },
 };
@@ -34,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable} h-full`}>
-      <body className="flex min-h-full flex-col bg-black text-neutral-200 antialiased">
+      <body className="flex min-h-full flex-col bg-[#faf9f6] text-neutral-900 antialiased">
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
