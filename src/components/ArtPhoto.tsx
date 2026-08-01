@@ -25,6 +25,7 @@ export default function ArtPhoto({
       className={`group relative block w-full overflow-hidden bg-neutral-200 ${
         onClick ? "cursor-zoom-in" : "cursor-default"
       } ${className ?? ""}`}
+      style={{ aspectRatio: photo.ratio }}
     >
       {!failed ? (
         // eslint-disable-next-line @next/next/no-img-element
