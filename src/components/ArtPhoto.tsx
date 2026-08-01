@@ -22,7 +22,7 @@ export default function ArtPhoto({
       type="button"
       onClick={onClick}
       aria-label={photo.alt}
-      className={`group relative block w-full overflow-hidden bg-neutral-200 ${
+      className={`group relative block w-full overflow-hidden bg-neutral-900 ${
         onClick ? "cursor-zoom-in" : "cursor-default"
       } ${className ?? ""}`}
       style={{ aspectRatio: photo.ratio }}
@@ -37,11 +37,11 @@ export default function ArtPhoto({
           className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
         />
       ) : (
-        <div className="flex h-full w-full items-center justify-center bg-neutral-200 text-neutral-400">
+        <div className="flex h-full w-full items-center justify-center bg-neutral-900 text-neutral-600">
           {photo.slug}
         </div>
       )}
-      <div className="pointer-events-none absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/10" />
+      <div className="pointer-events-none absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/20" />
     </button>
   );
 }

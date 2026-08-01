@@ -18,12 +18,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Chris Burger | Photographer",
+  title: "Christiaan Burger | Portfolio",
   description:
-    "Portrait, street, nature, and travel photography by Chris Burger (@chrispyphotos___).",
+    "Portrait, street, nature, and travel photography by Christiaan Burger (@chrispyphotos___).",
   openGraph: {
-    title: "Chris Burger | Photographer",
-    description: "Portrait, street, nature, and travel photography by Chris Burger.",
+    title: "Christiaan Burger | Portfolio",
+    description: "Portrait, street, nature, and travel photography by Christiaan Burger.",
     type: "website",
   },
 };
@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable} h-full`}>
-      <body className="flex min-h-full flex-col bg-[#faf9f6] text-neutral-900 antialiased">
+      <body className="flex min-h-full flex-col bg-[#121210] text-neutral-100 antialiased">
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
