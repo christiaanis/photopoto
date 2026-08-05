@@ -103,7 +103,6 @@ export const photos: Photo[] = [
   { slug: "photo-092", alt: "Study in light and shadow", aspect: "landscape", ratio: 1.5000 },
   { slug: "photo-093", alt: "A moment, held still", aspect: "portrait", ratio: 0.6667 },
   { slug: "photo-094", alt: "Texture and tone, on location", aspect: "landscape", ratio: 1.5000 },
-  { slug: "photo-095", alt: "Minimal frame, maximum light", aspect: "landscape", ratio: 1.5000 },
   { slug: "photo-096", alt: "Documentary eye, editorial finish", aspect: "landscape", ratio: 1.5000 },
   { slug: "photo-097", alt: "Natural light, unposed moment", aspect: "landscape", ratio: 1.5000 },
   { slug: "photo-098", alt: "Quiet composition, honest detail", aspect: "portrait", ratio: 0.6667 },
