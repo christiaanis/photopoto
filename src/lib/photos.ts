@@ -139,6 +139,9 @@ export const photos: Photo[] = [
   { slug: "photo-130", alt: "Natural light, unposed moment", aspect: "landscape", ratio: 1.4999, featured: true },
   { slug: "photo-131", alt: "Quiet composition, honest detail", aspect: "landscape", ratio: 1.5003 },
   { slug: "photo-132", alt: "Candid frame, available light", aspect: "landscape", ratio: 1.4979 },
+  { slug: "photo-133", alt: "Quiet composition, honest detail", aspect: "landscape", ratio: 1.5377 },
+  { slug: "photo-134", alt: "Quiet composition, honest detail", aspect: "landscape", ratio: 1.4963 },
+  { slug: "photo-135", alt: "Candid frame, available light", aspect: "landscape", ratio: 1.4963 },
 ];
 
 export const featuredPhotos = photos.filter((p) => p.featured);
